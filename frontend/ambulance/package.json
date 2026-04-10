@@ -1,0 +1,12 @@
+{
+  "name": "ambulance-ambulance-runner",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "predev": "npm --prefix ..\\..\\frontend-ambulance install --silent",
+    "dev": "npm --prefix ..\\..\\frontend-ambulance run dev",
+    "prebuild": "npm --prefix ..\\..\\frontend-ambulance install --silent",
+    "build": "npm --prefix ..\\..\\frontend-ambulance run build",
+    "preview": "npm --prefix ..\\..\\frontend-ambulance run preview"
+  }
+}

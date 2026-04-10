@@ -1,0 +1,12 @@
+{
+  "name": "ambulance-control-runner",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "predev": "npm --prefix ..\\..\\frontend-control install --silent",
+    "dev": "npm --prefix ..\\..\\frontend-control run dev",
+    "prebuild": "npm --prefix ..\\..\\frontend-control install --silent",
+    "build": "npm --prefix ..\\..\\frontend-control run build",
+    "preview": "npm --prefix ..\\..\\frontend-control run preview"
+  }
+}

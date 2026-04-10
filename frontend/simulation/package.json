@@ -1,0 +1,12 @@
+{
+  "name": "ambulance-simulation-runner",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "predev": "npm --prefix ..\\..\\frontend-simulation install --silent",
+    "dev": "npm --prefix ..\\..\\frontend-simulation run dev",
+    "prebuild": "npm --prefix ..\\..\\frontend-simulation install --silent",
+    "build": "npm --prefix ..\\..\\frontend-simulation run build",
+    "preview": "npm --prefix ..\\..\\frontend-simulation run preview"
+  }
+}
