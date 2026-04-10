@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+venv/
+env/
+.env
+.env.*
+*.env
+
+# Node
+node_modules/
+dist/
+.cache/
+.parcel-cache/
+
+# Vite build output
+frontend/dist/
+frontend-control/dist/
+frontend-simulation/dist/
+frontend-ambulance/dist/
+frontend-hospital/dist/
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Claude local settings
+.claude/settings.local.json

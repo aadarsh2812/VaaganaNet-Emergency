@@ -1,0 +1,38 @@
+version: "3.8"
+
+services:
+  mongodb:
+    image: mongo:latest
+    container_name: ambulance_mongo
+    restart: always
+    ports:
+      - "27017:27017"
+    environment:
+      MONGO_INITDB_DATABASE: ambulance_db
+    volumes:
+      - mongo_data:/data/db
+    networks:
+      - ambulance_net
+
+  backend:
+    build: ./backend
+    container_name: ambulance_backend
+    restart: always
+    ports:
+      - "8000:8000"
+    environment:
+      - MONGO_URL=mongodb://mongodb:27017
+      - DB_NAME=ambulance_db
+    depends_on:
+      - mongodb
+    networks:
+      - ambulance_net
+    volumes:
+      - ./backend:/app
+
+volumes:
+  mongo_data:
+
+networks:
+  ambulance_net:
+    driver: bridge
